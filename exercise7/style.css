@@ -1,0 +1,31 @@
+.interior {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+
+.div1 {
+    background-color: red;
+    left: 120px;
+    opacity:1;
+}
+
+.div1::before {
+    background-color: red;
+    position: absolute;
+    content: "";
+    left: -210px;
+    height:100px;
+    width: 100px;
+    opacity: 0.5;
+}
+
+.div1::after {
+    background-color: red;
+    position: absolute;
+    content: "";
+    left: -105px;
+    height: 100px;
+    width: 100px;
+    opacity: .75;
+}

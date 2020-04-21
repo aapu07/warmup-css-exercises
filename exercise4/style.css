@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --border-variable: 10px solid white;
+    --first-box-color: red;
+    --second-box-color: orange;
+    --third-box-color: blue;
+    --forth-box-color: purple;
+    --fifth-box-color: yellow;
+    --sixth-box-color: green;
+    --offset:150px;
+}
+
+.container {
+    height: calc(var(--offset)*7);
+    width: calc(var(--offset)*7);
+    border: var(--border-variable)
+}
+
+.interior {
+    height: calc(var(--offset)*2);
+    width: calc(var(--offset)*2);
+    border: var(--border-variable)
+}
+
+.div1 {
+    background-color: var(--first-box-color);
+    
+}
+
+.div2 {
+    position: relative;
+    top: calc(var(--offset)*-1);
+    left: var(--offset);
+    background-color: var(--second-box-color);
+}
+
+.div3 {
+    position: relative;
+    top: calc(var(--offset)*-2);
+    left: 280px;
+    background-color:var(--third-box-color);
+}
+.div4 {
+    position: relative;
+    top: calc(var(--offset)*-3);
+    left: calc(var(--offset)*3);
+    background-color: var(--forth-box-color);
+}
+
+.div5 {
+    position: relative;
+    top: calc(var(--offset)*-4);
+    left: calc(var(--offset)*4);
+    background-color: var(--fifth-box-color);
+}
+.div6 {
+    position: relative;
+    top: calc(var(--offset)*-5);
+    left: calc(var(--offset)*5);
+    background-color: var(--sixth-box-color);
+}
